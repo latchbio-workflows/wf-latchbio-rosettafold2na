@@ -100,6 +100,8 @@ RUN git clone https://github.com/uw-ipd/RoseTTAFold2NA.git  && \
     conda run -n RF2NA pip install -r /tmp/docker-build/work/RoseTTAFold2NA/SE3Transformer/requirements.txt && \
     conda run -n RF2NA pip install /tmp/docker-build/work/RoseTTAFold2NA/SE3Transformer/
 
+ENV DGLBACKEND=pytorch
+
 # Copy workflow data (use .dockerignore to skip files)
 COPY . /root/
 
