@@ -64,7 +64,7 @@ class SequenceTable:
     file: LatchFile
 
 
-@privileged_small_gpu_task(cache=True)
+@privileged_large_gpu_task(cache=True)
 def rosettafold2na_task(
     run_name: str,
     sequence_table: List[SequenceTable],

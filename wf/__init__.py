@@ -150,20 +150,20 @@ def rosettafold2na_workflow(
 
 LaunchPlan(
     rosettafold2na_workflow,
-    "RNA Protein Example",
+    "DNA Protein Example",
     {
-        "run_name": "rna_protein_complex",
+        "run_name": "dna_protein_complex",
         "sequence_table": [
             SequenceTable(
                 type=ChainType.protein,
                 file=LatchFile(
-                    "s3://latch-public/proteinengineering/rosettafold2na/protein_rna.fa"
+                    "s3://latch-public/proteinengineering/rosettafold2na/protein_test.fa"
                 ),
             ),
             SequenceTable(
-                type=ChainType.rna,
+                type=ChainType.doublestrand_dna,
                 file=LatchFile(
-                    "s3://latch-public/proteinengineering/rosettafold2na/rna.fa"
+                    "s3://latch-public/proteinengineering/rosettafold2na/dna_test.fa"
                 ),
             ),
         ],
