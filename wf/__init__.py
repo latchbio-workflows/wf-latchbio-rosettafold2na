@@ -46,6 +46,7 @@ metadata = LatchMetadata(
     author=LatchAuthor(
         name="Minkyung Baek et al.",
     ),
+    repository="https://github.com/latchbio-workflows/wf-latchbio-rosettafold2na",
     license="MIT",
     tags=["Protein Engineering"],
     parameters={
@@ -84,6 +85,10 @@ def rosettafold2na_workflow(
     RosettaFold2NA: Protein-Nucleic Acid Complex Structure Prediction
 
     <p align="center">
+        <img src="https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs41592-023-02086-5/MediaObjects/41592_2023_2086_Fig1_HTML.png" width="800px"/>
+    </p>
+
+    <p align="center">
     <img src="https://user-images.githubusercontent.com/31255434/182289305-4cc620e3-86ae-480f-9b61-6ca83283caa5.jpg" alt="Latch Verified" width="100">
     </p>
 
@@ -95,7 +100,7 @@ def rosettafold2na_workflow(
 
     ## Overview
 
-    RosettaFold2NA is a state-of-the-art neural network that rapidly produces 3D structure models with confidence estimates for protein-DNA and protein-RNA complexes, as well as RNA tertiary structures. This Latch workflow represents a significant advancement in predicting the structures of protein-nucleic acid complexes without homology to known complexes, a problem that has remained largely unsolved until now.
+    RosettaFold2NA is a state-of-the-art neural network that rapidly produces 3D structure models with confidence estimates for protein-DNA and protein-RNA complexes, as well as RNA tertiary structures.
 
     ## Key Features
 
